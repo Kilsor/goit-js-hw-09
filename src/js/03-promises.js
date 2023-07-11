@@ -24,7 +24,7 @@ document.querySelector('.form').addEventListener('submit', function (event) {
   // Відміна стандартної дії браузера по події 'submit' форми
   event.preventDefault();
   // Отримання значень з полів форми
-  const delay = Number(event.target.elements.delay.value);
+  let delay = Number(event.target.elements.delay.value);
   const step = Number(event.target.elements.step.value);
   const amount = Number(event.target.elements.amount.value);
   // Цикл для створення вказаної кількості промісів
